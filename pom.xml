@@ -62,16 +62,23 @@
 
         <dependency>
             <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-bundle</artifactId>
+            <artifactId>jersey-server</artifactId>
             <version>1.9</version>
         </dependency>
 
-      <!--  <dependency>
+
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-core</artifactId>
+            <version>1.9</version>
+        </dependency>
+
+      <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-json</artifactId>
             <version>1.9</version>
         </dependency>
--->
+
 
         <dependency>
             <groupId>mysql</groupId>
