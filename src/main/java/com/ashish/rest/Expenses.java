@@ -1,18 +1,40 @@
 package com.ashish.rest;
+
+import java.sql.Date;
+
 /**
  * Created by admin on 28-Jan-16.
  */
-public class Model {
+public class Expenses {
 
     private int amount =100;
     private String  reason = "somewhere";
+    private Date date = null;
 
-    public Model(int amount, String reason) {
+
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public Expenses(int amount, String reason, Date date) {
         this.amount = amount;
+        this.date = date;
         this.reason = reason;
     }
 
-    public Model() {
+    public static void main(String[] args) {
+
+        long dateTime = new java.util.Date().getTime() ;
+        java.sql.Date date1 = new java.sql.Date(dateTime);
+
+    }
+
+    public Expenses() {
 
     }
 
@@ -35,7 +57,7 @@ public class Model {
 
     @Override
     public String toString() {
-        return "Model{" +
+        return "Expenses{" +
                 "amount=" + amount +
                 ", reason='" + reason + '\'' +
                 '}';
